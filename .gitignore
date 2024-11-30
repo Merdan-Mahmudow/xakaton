@@ -1,0 +1,9 @@
+.venv/
+**/.venv/
+**/node_modules
+**/__pycache__/
+**/results/
+**/sentiment_model/
+**/roberta/
+**/dataset
+**/.env

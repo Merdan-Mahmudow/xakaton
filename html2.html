@@ -1,0 +1,317 @@
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<style>
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+  }
+
+  .main-slider {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+  .thumbnail-slider {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    right: 30px;
+    z-index: 10;
+    overflow: hidden;
+  }
+
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .thumbnail-slide>div {
+    min-height: 100px;
+    border-radius: 10px;
+  }
+
+  .thumbnail-slide img {
+    width: 100%;
+    min-height: 100px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid transparent;
+  }
+
+  .thumbnail-slide.selected img {
+    border: 3px solid #fff;
+  }
+
+  .info {
+    position: absolute;
+    bottom: 40%;
+    left: 35px;
+    color: #fff;
+  }
+
+  .info h1 {
+    font-size: 24px;
+  }
+
+  .info span {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Медиазапросы для адаптации */
+  @media (max-width: 768px) {
+    .thumbnail-slider {
+      left: 10px;
+      right: 10px;
+    }
+
+    .swiper-slide {
+      background-position: center center;
+    }
+
+    .info {
+      bottom: 20%;
+      left: 20px;
+    }
+
+    .info h1 {
+      font-size: 20px;
+    }
+
+    .info span {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .thumbnail-slide img {
+      min-height: 80px;
+    }
+
+    .info {
+      bottom: 15%;
+    }
+
+    .info h1 {
+      font-size: 18px;
+    }
+
+    .info span {
+      font-size: 16px;
+    }
+  }
+</style>
+<div class="main-slider swiper-container">
+	<div class="swiper-wrapper">
+	  <div class="swiper-slide" style="background-image:url('https://kalix.club/uploads/posts/2022-12/1671740921_kalix-club-p-kontsert-art-krasivo-31.jpg')">
+		<div class='info'>
+		  <h2>небольшой текст</h2>
+		  <h1>заголовок</h1>
+		  <span>описание</span>
+		  <div>
+			<a href="#" title="Смотреть" class="tooltip-trigger"><i class="icon-play"></i>Смотреть</a>
+			<div class="tooltip">
+			  <h3>Выберите способ оплаты</h3>
+			  <a href="#" title="Оплатить Российской картой">Российская карта <b>299</b></a>
+			  <a href="#" title="Оплатить Иностранной картой">Иностранная карта <b>3.3</b></a>
+			</div>
+			<a href="/concert/<?= $con->alias ?>/" title="Подробнее">Подробнее</a>
+		  </div>
+		</div>
+	  </div>
+	  <div class="swiper-slide" style="background-image:url('https://kartinkof.cdnsap.ru/posts/fon-dlia-afishi-karaoke-75-foto-28.jpg')">
+		<div class='info'>
+		  <h2>небольшой текст</h2>
+		  <h1>заголовок</h1>
+		  <span>описание</span>
+		  <div>
+			<a href="#" title="Смотреть" class="tooltip-trigger"><i class="icon-play"></i>Смотреть</a>
+			<div class="tooltip">
+			  <h3>Выберите способ оплаты</h3>
+			  <a href="#" title="Оплатить Российской картой">Российская карта <b>299</b></a>
+			  <a href="#" title="Оплатить Иностранной картой">Иностранная карта <b>3.3</b></a>
+			</div>
+			<a href="/concert/<?= $con->alias ?>/" title="Подробнее">Подробнее</a>
+		  </div>
+		</div>
+	  </div>
+	  <div class="swiper-slide" style="background-image:url('https://pp.userapi.com/c846524/v846524781/174a79/3miROYV5OBQ.jpg')">
+		<div class='info'>
+		  <h2>небольшой текст</h2>
+		  <h1>заголовок</h1>
+		  <span>описание</span>
+		  <div>
+			<a href="#" title="Смотреть" class="tooltip-trigger"><i class="icon-play"></i>Смотреть</a>
+			<div class="tooltip">
+			  <h3>Выберите способ оплаты</h3>
+			  <a href="#" title="Оплатить Российской картой">Российская карта <b>299</b></a>
+			  <a href="#" title="Оплатить Иностранной картой">Иностранная карта <b>3.3</b></a>
+			</div>
+			<a href="/concert/<?= $con->alias ?>/" title="Подробнее">Подробнее</a>
+		  </div>
+		</div>
+	  </div>
+	  <div class="swiper-slide" style="background-image:url('https://fwmail.teenee.com/etc/img4/m148538.jpg')">
+		<div class='info'>
+		  <h2>небольшой текст</h2>
+		  <h1>заголовок</h1>
+		  <span>описание</span>
+		  <div>
+			<a href="#" title="Смотреть" class="tooltip-trigger"><i class="icon-play"></i>Смотреть</a>
+			<div class="tooltip">
+			  <h3>Выберите способ оплаты</h3>
+			  <a href="#" title="Оплатить Российской картой">Российская карта <b>299</b></a>
+			  <a href="#" title="Оплатить Иностранной картой">Иностранная карта <b>3.3</b></a>
+			</div>
+			<a href="/concert/<?= $con->alias ?>/" title="Подробнее">Подробнее</a>
+		  </div>
+		</div>
+	  </div>
+	  <div class="swiper-slide" style="background-image:url('https://kalix.club/uploads/posts/2022-12/1671740921_kalix-club-p-kontsert-art-krasivo-31.jpg')">
+		<div class='info'>
+		  <h2>небольшой текст</h2>
+		  <h1>заголовок</h1>
+		  <span>описание</span>
+		  <div>
+			<a href="#" title="Смотреть" class="tooltip-trigger"><i class="icon-play"></i>Смотреть</a>
+			<div class="tooltip">
+			  <h3>Выберите способ оплаты</h3>
+			  <a href="#" title="Оплатить Российской картой">Российская карта <b>299</b></a>
+			  <a href="#" title="Оплатить Иностранной картой">Иностранная карта <b>3.3</b></a>
+			</div>
+			<a href="/concert/<?= $con->alias ?>/" title="Подробнее">Подробнее</a>
+		  </div>
+		</div>
+	  </div>
+	  <div class="swiper-slide" style="background-image:url('https://kartinkof.cdnsap.ru/posts/fon-dlia-afishi-karaoke-75-foto-28.jpg')">
+		<div class='info'>
+		  <h2>небольшой текст</h2>
+		  <h1>заголовок</h1>
+		  <span>описание</span>
+		  <div>
+			<a href="#" title="Смотреть" class="tooltip-trigger"><i class="icon-play"></i>Смотреть</a>
+			<div class="tooltip">
+			  <h3>Выберите способ оплаты</h3>
+			  <a href="#" title="Оплатить Российской картой">Российская карта <b>299</b></a>
+			  <a href="#" title="Оплатить Иностранной картой">Иностранная карта <b>3.3</b></a>
+			</div>
+			<a href="/concert/<?= $con->alias ?>/" title="Подробнее">Подробнее</a>
+		  </div>
+		</div>
+	  </div>
+	  <div class="swiper-slide" style="background-image:url('https://pp.userapi.com/c846524/v846524781/174a79/3miROYV5OBQ.jpg')"></div>
+	  <div class="swiper-slide" style="background-image:url('https://fwmail.teenee.com/etc/img4/m148538.jpg')"></div>
+	  <div class="swiper-slide" style="background-image:url('https://pp.userapi.com/c846524/v846524781/174a79/3miROYV5OBQ.jpg')"></div>
+	</div>
+	<div class="swiper-slide" style="background-image:url('https://pp.userapi.com/c846524/v846524781/174a79/3miROYV5OBQ.jpg')"></div>
+	<div class="swiper-slide" style="background-image:url('https://pp.userapi.com/c846524/v846524781/174a79/3miROYV5OBQ.jpg')"></div>
+	<div class="swiper-slide" style="background-image:url('https://pp.userapi.com/c846524/v846524781/174a79/3miROYV5OBQ.jpg')"></div>
+	<div class="swiper-slide" style="background-image:url('https://pp.userapi.com/c846524/v846524781/174a79/3miROYV5OBQ.jpg')"></div>
+  </div>
+  </div>
+  
+  <div class="thumbnail-slider swiper-container">
+	<div class="swiper-wrapper">
+	  <div class="swiper-slide thumbnail-slide">
+		<div>
+		  <img src="https://kalix.club/uploads/posts/2022-12/1671740921_kalix-club-p-kontsert-art-krasivo-31.jpg" alt="">
+		</div>
+		<h5>hghgfhgf hgfh fg</h5>
+	  </div>
+	  <div class="swiper-slide thumbnail-slide">
+		<img src="https://kartinkof.cdnsap.ru/posts/fon-dlia-afishi-karaoke-75-foto-28.jpg" alt="">
+		<h5>hghgfhgf hgfh fg</h5>
+	  </div>
+	  <div class="swiper-slide thumbnail-slide">
+		<div><img src="https://kartinkof.cdnsap.ru/posts/fon-dlia-afishi-karaoke-75-foto-28.jpg" alt=""></div>
+	  </div>
+	  <div class="swiper-slide thumbnail-slide">
+		<div><img src="https://kartinkof.cdnsap.ru/posts/fon-dlia-afishi-karaoke-75-foto-28.jpg" alt=""></div>
+		<h5>hghgfhgf hgfh fg</h5>
+	  </div>
+	  <div class="swiper-slide thumbnail-slide">
+		<div><img src="https://kartinkof.cdnsap.ru/posts/fon-dlia-afishi-karaoke-75-foto-28.jpg" alt=""></div>
+		<h5>hghgfhgf hgfh fg</h5>
+	  </div>
+	  <div class="swiper-slide thumbnail-slide">
+		<div> <img src="https://pp.userapi.com/c846524/v846524781/174a79/3miROYV5OBQ.jpg" alt=""></div>
+		<h5>hghgfhgf hgfh fg</h5>
+	  </div>
+	  <div class="swiper-slide thumbnail-slide">
+		<div> <img src="https://kalix.club/uploads/posts/2022-12/1671740921_kalix-club-p-kontsert-art-krasivo-31.jpg" alt=""></div>
+		<h5>hghgfhgf hgfh fg</h5>
+	  </div>
+	  <div class="swiper-slide thumbnail-slide">
+		<div> <img src="https://kalix.club/uploads/posts/2022-12/1671740921_kalix-club-p-kontsert-art-krasivo-31.jpg" alt=""></div>
+		<h5>hghgfhgf hgfh fg</h5>
+	  </div>
+	  <div class="swiper-slide thumbnail-slide">
+		<div><img src="https://kalix.club/uploads/posts/2022-12/1671740921_kalix-club-p-kontsert-art-krasivo-31.jpg" alt=""></div>
+		<h5>hghgfhgf hgfh fg</h5>
+	  </div>
+	  <div class="swiper-slide thumbnail-slide">
+		<div><img src="https://kalix.club/uploads/posts/2022-12/1671740921_kalix-club-p-kontsert-art-krasivo-31.jpg" alt=""></div>
+		<h5>hghgfhgf hgfh fg</h5>
+	  </div>
+	  <div class="swiper-slide thumbnail-slide">
+		<div><img src="https://kalix.club/uploads/posts/2022-12/1671740921_kalix-club-p-kontsert-art-krasivo-31.jpg" alt="">
+		</div>
+		<h5>hghgfhgf hgfh fg</h5>
+	  </div>
+	</div>
+	<!-- Add Navigation for Thumbnail Slider -->
+	<div class="swiper-button-next"></div>
+	<div class="swiper-button-prev"></div>
+  </div>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+  var mainSlider = new Swiper(".main-slider", {
+    loop: true,
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true
+    },
+    simulateTouch: false
+  });
+
+  var thumbnailSlider = new Swiper(".thumbnail-slider", {
+    spaceBetween: 10,
+    slidesPerView: 5,
+    freeMode: true,
+    watchSlidesProgress: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    }
+  });
+
+  thumbnailSlider.on("click", function (swiper, event) {
+    var clickedIndex = swiper.clickedIndex;
+    if (clickedIndex !== undefined) {
+      mainSlider.slideTo(clickedIndex);
+      document.querySelectorAll(".thumbnail-slide").forEach(function (slide) {
+        slide.classList.remove("selected");
+      });
+      swiper.slides[clickedIndex].classList.add("selected");
+    }
+  });
+</script>
